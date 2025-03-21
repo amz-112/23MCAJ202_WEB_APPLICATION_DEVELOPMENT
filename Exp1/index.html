@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        /* Basic Page Styling- given internal styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f2f2f2; /* Light gray background */
+        }
+
+        /* Centered Form Container */
+        .container {
+            width: 300px;
+            background: rgb(246, 246, 247);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px gray; /* Box shadow for a floating effect */
+            margin: auto;
+        }
+
+        /* Styling for Input Fields */
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #5e6764;
+            border-radius: 5px;
+        }
+
+        /* Submit Button Styling */
+        button {
+            width: 100%;
+            padding: 10px;
+            background: rgb(14, 180, 61);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Error Message Styling */
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Linking External JavaScript File -->
+    <script src="script.js" defer></script>
+
+<!-- Registration Form Container -->
+<div class="container">
+    <h2>Register with a Smile!<img src="bg2.jpg" height="40" width="40"></h2>
+
+    <!-- Registration Form -->
+    <form id="registrationForm">
+        <!-- Full Name Input -->
+        <label>Full Name:</label>
+        <input type="text" id="name">
+        <div class="error" id="nameError"></div> <!-- Error message for name -->
+
+        <!-- Email Input -->
+        <label>Email:</label>
+        <input type="email" id="email">
+        <div class="error" id="emailError"></div> <!-- Error message for email -->
+
+        <!-- Password Input -->
+        <label>Password:</label>
+        <input type="password" id="password">
+        <div class="error" id="passwordError"></div> <!-- Error message for password -->
+
+        <!-- Phone Number Input -->
+        <label>Phone Number:</label>
+        <input type="text" id="phone">
+        <div class="error" id="phoneError"></div> <!-- Error message for phone number -->
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>

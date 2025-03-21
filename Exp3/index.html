@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over Event Example</title>
+    <script src="script.js" defer></script> <!-- Linking External JavaScript -->
+    <style>
+        /* Centering Content */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Styling for Image */
+        #image {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            transition: transform 0.3s; /* Smooth effect */
+        }
+
+        /* Hover Effect */
+        #image:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        /* Styling for Text */
+        #text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h2>Hover Over the Image to Change It</h2>
+
+    <!-- Image with ID for JavaScript -->
+    <img id="image" src="image1.jpg" alt="Original Image"  height="1000p" width="1000p">
+
+    <!-- Text to be changed on mouse over -->
+    <p id="text">You wanna see an another smile? Hover over the picture!!!</p>
+
+</body>
+</html>

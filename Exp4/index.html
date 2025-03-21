@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Symmetry Checker</title>
+    <script src="script.js" defer></script> <!-- Linking External JavaScript -->
+    <style>
+        /* Centering Content */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Input Box */
+        textarea {
+            width: 300px;
+            height: 150px;
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        /* Output Styling */
+        #result {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h2>Matrix Symmetry Checker</h2>
+
+    <!-- Textarea to Input Matrix -->
+    <textarea id="matrixInput" placeholder="Enter matrix rows separated by new lines. Use spaces to separate numbers."></textarea><br>
+
+    <!-- Button to Check Symmetry -->
+    <button onclick="checkSymmetry()">Check Symmetry</button>
+
+    <!-- Result Display -->
+    <p id="result"></p>
+
+</body>
+</html>
